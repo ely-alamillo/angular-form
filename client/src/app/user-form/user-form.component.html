@@ -1,0 +1,21 @@
+<div class="container">
+  <h1 class="text-muted">User Form</h1>
+  <div>
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- bound to the form we crated -->
+        <!-- ngSubmit to submit the form -->
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <!-- formControlName used to bind to the field on our from -->
+            <input type="text" id="username" formControlName="name" class="form-control">
+
+          </div>
+
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
